@@ -31,3 +31,11 @@
 <p align="center">
 Рисунок 1 - Схема взаимодействия клиента с сервером
 </p>
+
+## Возможные ошибки 
+Если при запуске проекта будет ошикба у клиента:
+Error: JavaFX runtime components are missing, and are required to run this application
+
+То необходимо в Edit Configurations для Application/App добавить Modify options Add VM options
+
+--module-path "Путь к javafx-sdk-17.0.2\lib" --add-modules javafx.controls,javafx.fxml 
